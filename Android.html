@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Android</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+
+    <script>
+      $(document).ready(function()
+      {
+        var heightPlacement = (($(window).height() - 602)/2);
+        $('.phone').css({"margin-top": heightPlacement, 'transition': '1.5s'});
+        //$('.phone').animate({'margin-top': '-heightPlacement', 'opacity': "1", 'transition': '1.5s'}, 'fast');
+      });
+    </script>
+  </head>
+  <body>
+      <div class="phone">
+        <div class="AndroidStatusBar">
+          <ul>
+            <li><a id="AndroidTime">5:52</a></li>
+            <li><a id="AndroidTime"><i class="material-icons" style="font-size:14px;">&#xE1A4;</i></a></li>
+            <li><a href="AndroidTime"><i class="material-icons" style="font-size:14px;">&#xE1B9;</i></a></li>
+            <li><a id="AndroidTime"><i class="material-icons" style="font-size:14px;">&#xE1BA;</i></a></li>
+          </ul>
+        </div>
+
+        <div class="AppHeader">
+          <span class="AndroidMenuTitle"><i class="material-icons">&#xE3C7;</i></span>
+          <span class="AndroidMenuTitle" style="margin-left:55px;">Primary</span>
+          <span class="AndroidMenuIcon"><i class="material-icons"  style=" margin-top:11px;">&#xE8B6;</i></span>
+        </div>
+
+
+        <div class="Cards">
+            <span class="Social"><i class="material-icons" style="color:#4986e7;">&#xE7FB;</i></span>
+            <span class="Social" id="Heading" style="margin-left:55px;">Social</span>
+            <span class="Social" id="Sub-Heading" style="margin:0 0 0 54px">Google+</span>
+            <button class="NewItems" style="font-size:12px; margin-top:64px; background: #4986e7;">1 new</button>
+        </div>
+
+        <div class="Cards">
+            <span class="Social"><i class="material-icons" style="color:#16a765;">&#xE54E;</i></span>
+            <span class="Social" id="Heading" style="margin-left:55px;">Promotions</span>
+            <span class="Social" id="Sub-Heading" style="margin:0 0 0 54px">Zagat, Google Offers</span>
+            <button class="NewItems" style="font-size:12px; margin-top:64px; background: #16a765;">2 new</button>
+        </div>
+
+        <div class="Cards">
+            <span class="Social"><i class="material-icons" style="color:#e9b330;">&#xE88E;</i></span>
+            <span class="Social" id="Heading" style="margin-left:55px;">Updates</span>
+            <span class="Social" id="Sub-Heading" style="margin:0 0 0 54px">Google Play</span>
+            <button class="NewItems" style="font-size:12px; margin-top:64px; background: #e9b330;">1 new</button>
+        </div>
+
+        <div class="AddButton" onclick="clickmeButton()">
+          <span class="AddButtonIcon">
+            <i class="material-icons" style="font-size:24px; vertical-align: middle; text-align: center;">&#xE254;</i>
+          </span>
+        </div>
+
+        <div class="AndroidButton">
+          <ul>
+            <li><a><img src="triangle.svg" alt="" width="14"></a></li>
+            <li><a><img src="circle.svg" alt="" width="14"></a></li>
+            <li><a><img src="rectangle.svg" alt="" width="14"></a></li>
+          </ul>
+        </div>
+    </div>
+  </body>
+</html>
