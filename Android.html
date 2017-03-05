@@ -11,6 +11,7 @@
     <script>
       $(document).ready(function()
       {
+        //This variable calculates the margin-top of the phone div for it to stay in the middle of the window when it gets resized.
         var heightPlacement = (($(window).height() - 602)/2);
         $('.phone').css({"margin-top": heightPlacement, 'transition': '1.5s'});
         //$('.phone').animate({'margin-top': '-heightPlacement', 'opacity': "1", 'transition': '1.5s'}, 'fast');
