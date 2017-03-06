@@ -15,14 +15,21 @@
         var heightPlacement = (($(window).height() - 602)/2);
         $('.phone').css({"margin-top": heightPlacement, 'opacity': '1', 'transition': '1.5s'});
 
-        //refresh page on browser resize
+        //This variable stores the previous height of the window.
+        var widowHeight = $(window).height();
+
+        //Instead of refreshing the window whenever the size is changed.
+        //This function refreshes the window only with the height of the window is changed.
         $(window).bind('resize', function(e)
         {
-          if (window.RT) clearTimeout(window.RT);
-          window.RT = setTimeout(function()
+          if($(this).height() != widowHeight)
           {
-            this.location.reload(false); /* false to get page from cache */
-          }, 1);
+            if (window.RT) clearTimeout(window.RT);
+            window.RT = setTimeout(function()
+            {
+              this.location.reload(false); /* false to get page from cache */
+            }, 1);
+          }
         });
       });
     </script>
