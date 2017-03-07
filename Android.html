@@ -16,13 +16,13 @@
         $('.phone').css({"margin-top": heightPlacement, 'opacity': '1', 'transition': '1.5s'});
 
         //This variable stores the previous height of the window.
-        var widowHeight = $(window).height();
+        var windowHeight = $(window).height();
 
         //Instead of refreshing the window whenever the size is changed.
         //This function refreshes the window only with the height of the window is changed.
         $(window).bind('resize', function(e)
         {
-          if($(this).height() != widowHeight)
+          if($(this).height() != windowHeight)
           {
             if (window.RT) clearTimeout(window.RT);
             window.RT = setTimeout(function()
