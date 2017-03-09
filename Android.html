@@ -37,9 +37,12 @@
         var time = date.getHours() - 12 + ":" + date.getMinutes();
         $(".Time").text(time);
 
+        $(".AddButtonClickAnimation").hide();
+
         $(".AddButton").click(function(){
 
           $(this).addClass("AddButtonClickAnimation");
+          $(".AddButtonClickAnimation").show();
           $(".AddButtonIcon").remove();
         });
       });
@@ -61,7 +64,6 @@
           <span class="AndroidMenuTitle" style="margin-left:55px;">Primary</span>
           <span class="AndroidMenuIcon"><i class="material-icons"  style=" margin-top:11px;">&#xE8B6;</i></span>
         </div>
-
 
         <div class="Cards">
             <span class="Social"><i class="material-icons" style="color:#4986e7;">&#xE7FB;</i></span>
@@ -88,6 +90,12 @@
           <span class="AddButtonIcon">
             <i class="material-icons" style="font-size:24px; vertical-align: middle; text-align: center;">&#xE254;</i>
           </span>
+          <div class="AddButtonClickAnimation">
+            <div class="EmailAppHeader">
+              <span class="EmailAndroidMenuTitle" id="BackButton"><i class="material-icons" style="font-size: 22px;">&#xE314;</i></span>
+              <span class="EmailAndroidMenuTitle" style="margin-left:55px;">Compose</span>
+            </div>
+          </div>
         </div>
 
         <div class="AndroidButton">
