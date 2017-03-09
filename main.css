@@ -107,21 +107,6 @@ body
   cursor: pointer;
 }
 
-.AddButtonClickAnimation
-{
-  width: 100.2%;
-  height: 100%;
-  border-radius: 0;
-  background-color: #303030;
-  transition: .2s;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  cursor: default;
-}
-
 .AddButtonIcon
 {
   display: table-cell;
@@ -214,24 +199,4 @@ body
   color: #fff;
   font-family: 'Roboto', sans-serif;
   border-radius: 1px;
-}
-
-.EmailAppHeader
-{
-  height: 50px;
-  background-color: #da4336;
-  -webkit-box-shadow: 0px 7px 21px -10px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 7px 21px -10px rgba(0,0,0,0.75);
-  box-shadow: 0px 7px 21px -10px rgba(0,0,0,0.75);
-}
-
-.EmailAndroidMenuTitle
-{
-  font-size: 18px;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  position: absolute;
-  font-weight: lighter;
-  top: 16px;
-  margin: 0 8px 0 12px;
 }

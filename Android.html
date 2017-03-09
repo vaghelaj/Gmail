@@ -36,15 +36,6 @@
         var date = new Date();
         var time = date.getHours() - 12 + ":" + date.getMinutes();
         $(".Time").text(time);
-
-        $(".AddButtonClickAnimation").hide();
-
-        $(".AddButton").click(function(){
-
-          $(this).addClass("AddButtonClickAnimation");
-          $(".AddButtonClickAnimation").show();
-          $(".AddButtonIcon").remove();
-        });
       });
     </script>
   </head>
@@ -90,12 +81,6 @@
           <span class="AddButtonIcon">
             <i class="material-icons" style="font-size:24px; vertical-align: middle; text-align: center;">&#xE254;</i>
           </span>
-          <div class="AddButtonClickAnimation">
-            <div class="EmailAppHeader">
-              <span class="EmailAndroidMenuTitle" id="BackButton"><i class="material-icons" style="font-size: 22px;">&#xE314;</i></span>
-              <span class="EmailAndroidMenuTitle" style="margin-left:55px;">Compose</span>
-            </div>
-          </div>
         </div>
 
         <div class="AndroidButton">
