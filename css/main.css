@@ -16,6 +16,7 @@ body
   position: relative;
   box-shadow:  6px 6px 15px -6px #333;
   opacity: 0;
+  overflow: hidden;
 }
 
 .AndroidStatusBar
@@ -56,7 +57,7 @@ body
   font-size: 12px;
 }
 
-.AndroidStatusBar #AndroidTime
+.AndroidStatusBar .AndroidTime
 {
   padding: 0 3px;
 }
@@ -119,7 +120,8 @@ body
 {
   height: 32px;
   background-color: #000100;
-  margin-top: 325px;
+  position: absolute;
+  bottom: 0;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   position: absolute;
@@ -131,7 +133,7 @@ body
 {
   height: 50px;
   padding: 0;
-  margin: 6px auto;
+  margin: 6px auto 0 auto;
   border-bottom: 1px solid #eee;
   position: relative;
 }
@@ -200,4 +202,12 @@ body
   color: #fff;
   font-family: 'Roboto', sans-serif;
   border-radius: 1px;
+}
+
+.Contact {
+  width: 100%;
+  height: 100px;
+  background-color: tomato;
+  display: flex;
+  
 }
